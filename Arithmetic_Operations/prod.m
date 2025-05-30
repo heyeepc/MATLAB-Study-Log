@@ -9,3 +9,7 @@ M = [1, 2, 3;
 p_col = prod(M);
 disp('矩阵每列的乘积是:');
 disp(p_col);
+
+p_row = prod(M, 2);
+disp('矩阵每行的乘积是:');
+disp(p_row);
