@@ -13,3 +13,8 @@ disp(p_col);
 p_row = prod(M, 2);
 disp('矩阵每行的乘积是:');
 disp(p_row);
+
+% 计算矩阵中所有元素的乘积
+p_all = prod(M, "all");
+disp(['矩阵中所有元素的乘积是: ', num2str(p_all)]);
+% 结果：矩阵中所有元素的乘积是: 8709120
