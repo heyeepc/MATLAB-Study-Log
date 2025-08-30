@@ -14,6 +14,9 @@ data_matrix = [
 % 1表示效益型（越大越好），-1表示成本型（越小越好）
 % 价格和耗油量是成本型，续航是效益型
 criteria_type = [-1, 1, -1];
+% 2选择并调用预处理函数
+normalized_data = minmax_normalize(data_matrix, criteria_type);
+
 
 % --- 2. 熵权法函数 ---
 
